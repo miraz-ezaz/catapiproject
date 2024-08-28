@@ -1,0 +1,90 @@
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    color: #ff4500;
+}
+
+
+/* Gallery styling */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: width 0.3s, height 0.3s;
+}
+
+
+/* Scrollable container styling */
+
+.scrollable-container {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+
+/* Icons for grid and list view */
+
+.view-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.view-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.view-icons button.active {
+    color: #ff4500;
+}
+
+
+/* Adjustments for list view */
+
+.gallery.list-view {
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery.list-view img {
+    width: 350px;
+    height: 350px;
+}
