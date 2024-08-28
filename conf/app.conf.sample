@@ -1,0 +1,4 @@
+appname = catapiproject
+httpport = port_to_run_the_server
+runmode = dev
+catapiproject.apikey = your_cat_api_key
