@@ -131,7 +131,7 @@ func makeVoteRequest(apiKey, imageID string, value int, ch chan<- VoteResponse, 
 
 	payload := map[string]interface{}{
 		"image_id": imageID,
-		"sub_id":   "my-user-1234", // Hardcoded sub_id
+		"sub_id":   "my-user-1234", // Hardcoded sub_id (It was kept harcoded intentionally as this project doesn't have any user-management)
 		"value":    value,
 	}
 	jsonPayload, _ := json.Marshal(payload)
